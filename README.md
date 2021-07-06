@@ -1,7 +1,7 @@
 # random-dog-api
 Treinando Javascript com APi.
 
-Desafio retirado do site: https://www.devchallenge.com.br/
+Desafio retirado do site: https://www.devchallenge.com.br/ <br>
 Desafio WiseGoat: https://www.devchallenge.com.br/challenges/5f14f8d5130a5d78f89d9640/details
 
 # :computer: Technologies
