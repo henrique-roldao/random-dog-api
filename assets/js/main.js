@@ -14,8 +14,7 @@ async function requestDog() {
   const data = await response.json();
   const dataUrl = data.url;
 
-  const validation = dataUrl.split(".mp4", 2);
-  if (validation.length == 2) {
+  if (dataUrl.includes(".mp4")) {
     requestDog();
   } else {
     imagem.innerHTML = `<img src="${dataUrl}" alt="Doguinho aleatório">`;
