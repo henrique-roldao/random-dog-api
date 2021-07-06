@@ -1,0 +1,118 @@
+@import "./variables";
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.text-group {
+  margin-bottom: 2rem;
+}
+
+.text-group h2 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  color: $darkColor;
+}
+
+.text-group a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: $white;
+  background: $primaryColor;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    background: $hover;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.img-dog img {
+  max-width: 300px;
+}
+
+// Motivational Page
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+}
+
+header a {
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Fira Code", monospace;
+  background: $lightColor;
+}
+
+.content .text {
+  display: flex;
+  align-items: center;
+  color: $primaryColor;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+}
+
+.content .text p {
+  padding: 2rem 0;
+}
+
+.content .img img {
+  width: 100%;
+  max-height: 350px;
+  border-radius: 1rem;
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .text-group {
+    margin-right: 4rem;
+  }
+  .text-group h2 {
+    font-size: 5rem;
+    color: $darkColor;
+  }
+  .img-dog img {
+    max-width: 500px;
+  }
+
+  // Motivational
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content .text {
+    font-size: 2rem;
+  }
+  .content .text p {
+    padding: 2rem;
+  }
+
+  .content .img img {
+    max-width: 450px;
+    max-height: 450px;
+  }
+}

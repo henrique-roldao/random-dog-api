@@ -6,7 +6,7 @@ async function requestMessage() {
   const dataMessage = await requestMessage.json();
   const message = dataMessage.slip.advice;
 
-  text.innerHTML = `<p>${message}</p>`;
+  text.innerHTML = `<p>"${message}"</p>`;
 }
 
 async function requestDog() {

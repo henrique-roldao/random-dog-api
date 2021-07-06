@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+$primaryColor: #827aff;
+$darkColor: #363643;
+$white: #f8f7ff;
+$hover: #6c63ff;
+$lightColor: #e4e3ff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+span.logo {
+  color: $primaryColor;
+}
+
+a {
+  color: $darkColor;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
